@@ -1,14 +1,14 @@
-# Flow Scrape
+# GrewBie
 
-This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Prisma, and React Flow. It enables users to create, manage, and execute complex web scraping workflows with a visual, no-code/low-code interface. The scraper comes with advanced features such as AI-based data extraction
+This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Prisma, and React Flow. It enables users to create, manage, automate and deploy workflows or website with a visual, no-code/low-code interface. The scraper comes with advanced features such as AI-based data extraction
 
 ## Screenshots
 
-### ScreenShot 1
+### GrewBie Platform
 
-![Screenshot 1](https://github.com/user-attachments/assets/07105297-8b67-4419-a92f-ef5ff5a038c6)
+![GrewBie Platform](./public/LandingPage.png)
 
-### ScreenShot 2
+### Example Workflow
 
 ![Screenshot 2](https://github.com/user-attachments/assets/ecf9c093-d03e-4ee0-bd71-48f1d0b38538)
 
