@@ -6,7 +6,7 @@ This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Pri
 
 ### GrewBie Platform
 
-![GrewBie Platform](./public/LandingPage.png)
+![GrewBie Platform](./public/landingpage.png)
 
 ### Example Workflow
 
