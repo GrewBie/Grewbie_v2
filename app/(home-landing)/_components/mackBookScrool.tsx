@@ -29,7 +29,7 @@ export function MacScroll() {
                 </p>
             </div>
         }
-        src={`/linear.webp`}
+        src="/workflowExample.png"
         showGradient={false}
       />
     </div>
