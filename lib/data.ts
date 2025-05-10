@@ -97,8 +97,8 @@ export const headerRoutes = [
     className: "",
   },
   {
-    title: "Scraping Features",
-    href: "#scrapingFeatures",
+    title: "No Code Features",
+    href: "#NoCodeFeatures",
     className: "",
   },
   {
@@ -120,6 +120,7 @@ export const pricingPlans = [
     description: "Get 1,000 credits",
     credits: 1000,
     price: 9.99,
+    highlighted: true,
     link: "/billing",
   },
   {
@@ -135,6 +136,7 @@ export const pricingPlans = [
     description: "Get 10,000 credits",
     credits: 10000,
     price: 69.99,
+    highlighted: true,
     link: "/billing",
   },
 ];

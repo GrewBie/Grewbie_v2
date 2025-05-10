@@ -1,12 +1,15 @@
 "use client";
+import { HoverBorderGradient } from "@/components/accernity-ui/hover-border-gradient";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { headerRoutes, routes } from "@/lib/data";
+import { useUser } from "@clerk/nextjs";
 import { MenuIcon, XIcon, ZapIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-function Navbar() {
+ function Navbar() {
+  const { user } = useUser();
   const scrollIntoView = (ele: string) => {
     let element = document.getElementById(ele.substring(1));
 
@@ -35,16 +38,18 @@ function Navbar() {
               {headerRoutes.map((route) =>
                 route?.button ? (
                   <Button
-                    key={route.href}
-                    className="hover:bg-white group w-max"
+                  key={route.href}
+                  className="hover:bg-white group w-max"
+                >
+                  <Link
+                    className="text-lg font-light text-white group-hover:text-primary"
+                    href={user ? "/home" : route.href}
                   >
-                    <Link
-                      className="text-lg font-light text-white group-hover:text-primary"
-                      href={route.href}
-                    >
-                      {route.title}
-                    </Link>
-                  </Button>
+                    <HoverBorderGradient>
+                      {user ? "Dashboard" : route.title}
+                    </HoverBorderGradient>
+                  </Link>
+                </Button>
                 ) : (
                   <span
                     className="text-lg font-light hover:text-white cursor-pointer select-none"
@@ -75,12 +80,12 @@ function Navbar() {
           route?.button ? (
             <Link
               className="text-sm font-medium text-white group-hover:text-primary"
-              href={route.href}
+              href={user ? "/home" : route.href}
               key={route.href}
             >
-              <Button className="hover:bg-white group text-white hover:text-primary">
-                {route.title}
-              </Button>
+              <HoverBorderGradient>
+                {user ? "Dashboard" : route.title}
+               </HoverBorderGradient>
             </Link>
           ) : (
             <span
