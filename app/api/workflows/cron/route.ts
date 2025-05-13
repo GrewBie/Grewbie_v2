@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { getAppUrl } from "@/lib/helper";
 import prisma from "@/lib/prisma";
 import { WorkflowStatus } from "@/lib/types";
@@ -18,16 +20,19 @@ export async function GET(request: NextRequest) {
       },
     },
   });
+
   for (const workflow of workflows) {
     triggerWorkflow(workflow.id);
   }
+
   return Response.json({ workflowsToRun: workflows.length }, { status: 200 });
 }
 
-function triggerWorkflow(wofkflowId: string) {
+function triggerWorkflow(workflowId: string) {
   const triggerApiUrl = getAppUrl(
-    `api/workflows/execute?workflowId=${wofkflowId}`
+    `api/workflows/execute?workflowId=${workflowId}`
   );
+
   fetch(triggerApiUrl, {
     headers: {
       Authorization: `Bearer ${process.env.API_SECRET!}`,
@@ -36,8 +41,8 @@ function triggerWorkflow(wofkflowId: string) {
   }).catch((error: any) => {
     console.error(
       "Error triggering workflow with id",
-      wofkflowId,
-      ":error->",
+      workflowId,
+      ": error ->",
       error.message
     );
   });
