@@ -10,7 +10,7 @@ This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Pri
 
 ### Example Workflow
 
-![Screenshot 2](https://github.com/user-attachments/assets/ecf9c093-d03e-4ee0-bd71-48f1d0b38538)
+![Screenshot 2](./public/workflowExample.jpg)
 
 ## Technologies Used
 

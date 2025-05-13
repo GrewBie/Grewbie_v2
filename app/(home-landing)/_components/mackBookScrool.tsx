@@ -29,7 +29,7 @@ export function MacScroll() {
                 </p>
             </div>
         }
-        src="/workflowExample.png"
+        src="/workflowExample.jpg"
         showGradient={false}
       />
     </div>
