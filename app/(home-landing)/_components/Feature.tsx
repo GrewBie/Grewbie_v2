@@ -6,16 +6,49 @@ import {
   Edit3Icon,
   EyeIcon,
   FileJson2Icon,
+  GaugeIcon,
   GlobeIcon,
+  HistoryIcon,
   Link2Icon,
   MouseIcon,
   MousePointerClick,
+  RepeatIcon,
   SendIcon,
+  StoreIcon,
   TextIcon,
+  UsersIcon,
 } from "lucide-react";
 
 export function FeaturesSection() {
   const features = [
+    {
+    title: "One-Click Deployment",
+    description:
+      "Deploy your app instantly—no servers, no setup, just a live URL in seconds.",
+    icon: <SendIcon className="stroke-blue-400" />,
+    hoverChipClassName: "group-hover/feature:bg-blue-500",
+  },
+  {
+    title: "Template Marketplace",
+    description:
+      "Create and sell reusable components, workflows, or templates to the GrewBie community.",
+    icon: <StoreIcon className="stroke-pink-400" />,
+    hoverChipClassName: "group-hover/feature:bg-pink-500",
+  },
+  {
+    title: "Version Control",
+    description:
+      "Track changes and roll back to previous versions effortlessly with built-in version history.",
+    icon: <HistoryIcon className="stroke-amber-400" />,
+    hoverChipClassName: "group-hover/feature:bg-amber-500",
+  },
+  {
+    title: "Data & API Integration",
+    description:
+      "Connect to external APIs, databases, and services with just a few clicks—no coding needed.",
+    icon: <DatabaseIcon className="stroke-rose-400" />,
+    hoverChipClassName: "group-hover/feature:bg-rose-500",
+  },
     {
       title: "Launch browser",
       description:
@@ -24,11 +57,11 @@ export function FeaturesSection() {
       hoverChipClassName: "group-hover/feature:bg-pink-500",
     },
     {
-      title: "Page to HTML",
+      title: "Usage & Analytics Dashboard",
       description:
-        "Extracts the complete HTML content of the current page for detailed analysis and processing.",
-      icon: <CodeIcon className="stroke-rose-400" />,
-      hoverChipClassName: "group-hover/feature:bg-rose-500",
+        "Track credit consumption, monitor workflow executions, and view performance metrics in one unified dashboard. Gain insights into what’s working and optimize your automations accordingly.",
+      icon: <GaugeIcon className="stroke-violet-400" />,
+      hoverChipClassName: "group-hover/feature:bg-violet-500",
     },
     {
       title: "Extract text from element",
@@ -38,18 +71,18 @@ export function FeaturesSection() {
       hoverChipClassName: "group-hover/feature:bg-rose-500",
     },
     {
-      title: "Fill input",
+      title: "Reusable Blocks",
       description:
-        "Automatically fills a specified input field with a desired value, emulating user input.",
-      icon: <Edit3Icon className="stroke-orange-400" />,
-      hoverChipClassName: "group-hover/feature:bg-orange-500",
+        "Save and reuse your own logic blocks or UI components across multiple projects.",
+      icon: <RepeatIcon className="stroke-indigo-400" />,
+      hoverChipClassName: "group-hover/feature:bg-indigo-500",
     },
     {
-      title: "Click Element",
+      title: "Team Collaboration",
       description:
-        "Simulates a click action on a specified HTML element, triggering any associated events or navigation.",
-      icon: <MousePointerClick className="stroke-orange-400" />,
-      hoverChipClassName: -'group.hover/feature:bg-"-500',
+        "Invite teammates to co-build, comment, and edit projects in real time—ideal for startups and agencies.",
+      icon: <UsersIcon className="stroke-green-400" />,
+      hoverChipClassName: "group-hover/feature:bg-green-500",
     },
     {
       title: "Scroll to element",
@@ -57,13 +90,6 @@ export function FeaturesSection() {
         "Scrolls to a specified element on the page, emulating user behavior for dynamic content loading.",
       icon: <MouseIcon className="stroke-orange-400" />,
       hoverChipClassName: "group-hover/feature:bg-orange-500",
-    },
-    {
-      title: "Wait for element",
-      description:
-        "Pauses the workflow until a specified element becomes visible or hidden on the page.",
-      icon: <EyeIcon className="stroke-amber-400" />,
-      hoverChipClassName: "group-hover/feature:bg-amber-500",
     },
     {
       title: "Deliver via webhook",
@@ -78,27 +104,6 @@ export function FeaturesSection() {
         "Uses AI to parse HTML content and extract structured data based on a custom prompt, returning JSON output.",
       icon: <BrainIcon className="stroke-rose-400" />,
       hoverChipClassName: "group-hover/feature:bg-rose-500",
-    },
-    {
-      title: "Read JSON",
-      description:
-        "Reads and retrieves a specific key or property from a JSON object for use in workflows.",
-      icon: <FileJson2Icon className="stroke-orange-400" />,
-      hoverChipClassName: "group-hover/feature:bg-orange-500",
-    },
-    {
-      title: "Build JSON",
-      description:
-        "Adds or updates data within an existing JSON object or creates a new one with the specified properties.",
-      icon: <DatabaseIcon className="stroke-orange-400" />,
-      hoverChipClassName: "group-hover/feature:bg-orange-500",
-    },
-    {
-      title: "Navigate to URL",
-      description:
-        "Navigates to a specified URL, loading the desired web page for scraping or interaction.",
-      icon: <Link2Icon className="stroke-orange-400" />,
-      hoverChipClassName: "group-hover/feature:bg-orange-500",
     },
   ];
 

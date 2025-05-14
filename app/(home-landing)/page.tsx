@@ -17,7 +17,7 @@ export default function HomeLandingPage() {
   return (
     <div className="flex flex-col min-h-screen gap-4 selection:bg-primary selection:text-white dark bg-[#0C0A09]">
       <Navbar />
-      <SectionWrapper fullWidth className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <SectionWrapper className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <MacScroll/>
       </SectionWrapper>
       <SectionWrapper
@@ -61,7 +61,7 @@ export default function HomeLandingPage() {
           <ChevronRightIcon className="ml-2 h-4 w-4" />
         </Link>
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          No credit card required. Start with 100 free credits.
+          No credit card required. Start with 200 free credits.
         </p>
       </SectionWrapper>
     </div>

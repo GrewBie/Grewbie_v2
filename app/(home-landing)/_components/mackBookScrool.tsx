@@ -25,7 +25,7 @@ export function MacScroll() {
                 </p>
                 <LitupButton><Link href={"/sign-in"}>Get Started</Link></LitupButton>
                 <p className="text-sm text-primary p-2">
-                New users get 100 credits for free upon first login
+                New users get 200 credits for free upon first login
                 </p>
             </div>
         }

@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { SquareDashedMousePointer } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-
+import Image from "next/image";
 function Logo({
   fontSize = "2xl",
   iconSize = 20,
@@ -18,13 +18,17 @@ function Logo({
       )}
       href="/"
     >
-      <div className="rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 p-2">
-        <SquareDashedMousePointer size={iconSize} className="stroke-white" />
-      </div>
       <div>
         <span className="bg-gradient-to-r from-emerald-500 to-emerald-600 bg-clip-text text-transparent">
           GrewBie
         </span>
+      </div>
+       <div className="rounded-xl bg-gradient-to-r">
+           <Image src='/GrewBie.png' 
+            width={50}
+            height={50} 
+            alt="GrewBie logo" 
+            className="shadow-sm"/>
       </div>
     </Link>
   );

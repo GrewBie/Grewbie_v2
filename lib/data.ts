@@ -68,27 +68,27 @@ export const typeWriterWords = [
 
 export const howItWorks = [
   {
-    title: "Build Your Workflow",
+    title: "Share Your Idea",
     description:
-      "Create powerful workflows with intuitive tools and actions, simplifying complex scraping tasks.",
+      "Describe your project in plain language—GrewBie’s AI understands your vision and gets to work instantly.",
   },
   {
-    title: "Scrape with Precision",
+    title: "Generate Instantly",
     description:
-      "Extract data efficiently from any web page using advanced tools, including AI-powered data extraction.",
-  },
-
-  {
-    title: "Automate and Optimize",
-    description:
-      "Schedule workflows, monitor execution stats, and optimize processes for maximum efficiency.",
+      "Our AI builds a complete full-stack web app or workflow tailored to your needs—ready to run and fully functional.",
   },
   {
-    title: "Deliver Anywhere",
+    title: "Edit with No Code",
     description:
-      "Send your scraped data directly to APIs, webhooks, or your preferred storage seamlessly.",
+      "Customize your project with an intuitive no-code editor—no technical skills required.",
+  },
+  {
+    title: "Deploy & Share",
+    description:
+      "Launch your project in one click, sell templates, or share nodes with the community effortlessly.",
   },
 ];
+
 
 export const headerRoutes = [
   {
