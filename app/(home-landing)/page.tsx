@@ -17,7 +17,7 @@ export default function HomeLandingPage() {
   return (
     <div className="flex flex-col min-h-screen gap-4 selection:bg-primary selection:text-white dark bg-[#0C0A09]">
       <Navbar />
-      <SectionWrapper className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <SectionWrapper fullWidth className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <MacScroll/>
       </SectionWrapper>
       <SectionWrapper

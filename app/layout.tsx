@@ -11,7 +11,10 @@ export const metadata: Metadata = {
   title: "Grewbie",
   description: "Build your own automation workflow and tools",
   openGraph: {
-    images: `${process.env.APP_URL}/og-image.png`,
+    images: `${process.env.APP_URL}/landingpage.png`,
+  },
+   icons: {
+    icon: `${process.env.APP_URL}/GrewBie.png`, 
   },
 };
 
