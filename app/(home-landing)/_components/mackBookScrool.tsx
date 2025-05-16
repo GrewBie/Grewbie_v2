@@ -16,7 +16,7 @@ export function MacScroll() {
                 Build and Automate with
                 <Cover className="bg-clip-text text-transparent bg-gradient-to-b 
                 from-black to-gray-400 dark:from-white dark:to-neutral-600 ">
-                GreBie
+                GrewBie
                 </Cover> 
                 </h1>
                 <p className="text-muted-foreground text-sm md:text-xl p-2">
